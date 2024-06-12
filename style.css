@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    font-family: "Noto Serif JP", serif;
+}
+body{
+    background-color: black;
+}
+p{
+    text-align: center;
+    margin-bottom: auto;
+}
+header{
+    width: 100vW;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    z-index: 999;
+    color: white;
+    top: 0;
+    left: 0;
+}
+.background{
+    background-image: url("ice.jpg");
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    margin: calc(2rem + 5%); /*rem : フォントサイズ*/
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+.subbox{
+    writing-mode: vertical-rl;
+    margin: 0 auto; /*x  横幅をいい感じに揃えてくれる*/
+}
+.mainbox{
+    
+}
+.middle{
+    display: flex;
+    margin: 45px;
+    gap: 20px;
+}
+.borber{
+    border-bottom: 1px solid black; 
+    padding: 0 10px;
+}
+.borber{
+    border-bottom: 1px solid white; 
+    padding: 0 10px;
+}
+img{
+    width:  180px;
+    border-radius: 50%; /*50以上で丸*/
+    mix-blend-mode: multiply; /*背景が白いところを透過*/
+    box-shadow: 0 0 10px 5px rgba(255, 165, 0, 2); 
+    /*輪郭にシャドウ x軸ずらす　y軸ずらす　シャドウの全体のピクセル　ぼかすピクセル　色*/
+
+}
+a{
+    text-decoration: none; /*hyperリンク先の下線*/
+}
+footer{
+    background-color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+}
